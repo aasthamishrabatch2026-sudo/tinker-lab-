@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            padding: 20px;
+            margin: 10px;
+            width: 120px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .html { background-color: lightgreen; }
+        .css { background-color: lightgrey; }
+        .inline { background-color: lightpink; }
+        .internal { background-color: lightyellow; }
+        .external { background-color: lavender; }
+
+        .info {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="top">
+    <h1>My Personal Portfolio</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#courses">HTML & CSS</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h1>Hello, I am Aastha Mishra</h1>
+    <h3>Student | Web Developer Learner</h3>
+    <p>Welcome to my personal portfolio website.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a student interested in learning HTML, CSS and web development.</p>
+</section>
+
+<section id="courses">
+    <h2>HTML & CSS Learning</h2>
+    <div class="container">
+        <a class="box html" href="#html-info">HTML</a>
+        <a class="box css" href="#css-info">CSS</a>
+        <a class="box inline" href="#inline-info">Inline CSS</a>
+        <a class="box internal" href="#internal-info">Internal CSS</a>
+        <a class="box external" href="#external-info">External CSS</a>
+    </div>
+</section>
+
+<section id="html-info">
+    <div class="info" style="background-color: lightgreen;">
+        <h3>HTML</h3>
+        <p>HTML is used to create the structure of a webpage.</p>
+    </div>
+</section>
+
+<section id="css-info">
+    <div class="info" style="background-color: lightgrey;">
+        <h3>CSS</h3>
+        <p>CSS is used to design and style a webpage.</p>
+    </div>
+</section>
+
+<section id="inline-info">
+    <div class="info" style="background-color: lightpink;">
+        <h3>Inline CSS</h3>
+        <p>Inline CSS is written inside an HTML tag using the style attribute.</p>
+    </div>
+</section>
+
+<section id="internal-info">
+    <div class="info" style="background-color: lightyellow;">
+        <h3>Internal CSS</h3>
+        <p>Internal CSS is written inside the style tag in the head section.</p>
+    </div>
+</section>
+
+<section id="external-info">
+    <div class="info" style="background-color: lavender;">
+        <h3>External CSS</h3>
+        <p>External CSS is written in a separate CSS file.</p>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>My Image Gallery</h2>
+    <img src="image.jpg" width="200" alt="My Image">
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Enter your name"><br>
+        <input type="email" placeholder="Enter your email"><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<a href="#top">TOP ↑</a>
+
+</body>
+</html>
